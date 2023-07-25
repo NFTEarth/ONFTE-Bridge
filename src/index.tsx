@@ -19,7 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { WagmiConfig } from "wagmi";
 
 // boostrap the bridge
-bootstrap(mainnet, {
+bootstrap(mainnet as any, {
   evm: wagmi.wagmiAdapter,
 });
 
